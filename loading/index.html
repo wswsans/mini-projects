@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Loading...</title>
+		<style type="text/css">
+		div.loading {
+			position: relative;
+			display: inline-block;
+			margin: 10px 5px 45px 5px;
+			padding: 5px;
+			height: 50px;
+			width: 100px;
+			background: none;
+			/* border */
+			border: 5px solid #000;
+			border-radius:0 0 50% 50% /0 0 100% 100%;
+			border-top: none;
+			/* Transform */
+			transform-origin: 50% 25%;
+			/* Animation */
+			animation-name: roll;
+			animation-duration: 0.10s;
+			animation-timing-function: ease;
+			animation-iteration-count: infinite;
+		}
+		@keyframes roll {
+			0% { transform:  rotate(180deg); }
+			100% { transform: rotate(540deg); }
+		}
+		</style>
+	</head>
+	<body>
+		<div class="loading"></div>
+	</body>
+</html>
